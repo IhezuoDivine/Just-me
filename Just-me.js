@@ -7,41 +7,53 @@ const sidemenubtn = document.getElementById("sidemenubtn");
 const infocontainer = document.getElementById("infocontainer");
 const infobtn = document.getElementById("infobtn");
 const close = document.getElementById("close");
+const aboutLink = document.querySelector('.about1');
+const homeLink = document.querySelector('.home2');
+const aboutSection = document.getElementById('aboutme');
+const mainSection = document.getElementById('main');
+//const seework = document.getElementById("seework");
 
-// Show sectionsidemenu
+
 menubarbtn.addEventListener("click", () => {
   sectionsidemenu.style.display = "block";
   sidemenu.style.display = "block";
   infocontainer.style.display = "none";
 });
 
-// Show info 
 infobtn.addEventListener("click", () => {
   sidemenu.style.display = "none";
   infocontainer.style.display = "block";
 });
 
-// Show sidemenu
 sidemenubtn.addEventListener("click", () => {
   infocontainer.style.display = "none";
   sidemenu.style.display = "block";
 
 });
+  
+close.addEventListener("click",function(event) {
+   event.preventDefault();
+   sectionsidemenu.style.display = 'none';
+});
 
-close.addEventListener("click", () => {
-   sectionsidemenu.style.display = "none"
+aboutLink.addEventListener('click', function (e) {
+  e.preventDefault();
+  aboutSection.style.display = 'block';
+  mainSection.style.display = 'none';
+  sectionsidemenu.style.display ="none";
+  seework.textContent = "Click To go Back";
+});
+
+homeLink.addEventListener('click', function (e) {
+  e.preventDefault();
+  sectionsidemenu.style.display = 'none';
+  aboutSection.style.display = 'none';
+  mainSection.style.display = 'block';
+  seework.textContent = "See My Work";
 });
 
 
-  const toggleButtons = document.querySelectorAll('.toggle-btn');
-  const contactForms = document.querySelectorAll('.contact-form');
-
-  toggleButtons.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-      contactForms[index].classList.toggle('hidden');
-    });
-  });
-
+/*
   contactForms.forEach(form => {
     form.addEventListener('submit', (e) => {
       const name = form.querySelector('.name-input').value.trim();
@@ -60,5 +72,5 @@ close.addEventListener("click", () => {
       }
     });
   });
-
+  */
 });
