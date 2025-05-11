@@ -62,8 +62,8 @@
          code and creativity.</p>
 
       <p class="CV"><a href="MY RESUME.IHEZUO.DIVINE.pdf">&#x25BC; Download my CV</a></p>
-    
-      <a href="#iframe2" class="seework" id="seework">See My Work</a>
+      <a href=""  class="seework" id="seework">Go back</a>
+      <a href="#iframe2" class="seework" id="seework2">See My Work</a>
     </section>
   
 
@@ -198,11 +198,12 @@
       <h2>Contact Me</h2>
       <details>
        <summary class="hidden">Click to send a Message</summary>
-           <form class="contact-form">
-            <input type="text" class="name-input" placeholder="Your Name" required>
-            <input type="email" class="email-input" placeholder="Your Email" required>
-            <textarea class="message-input" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+           <form action="https://formspree.io/f/xovdnarj" method="post" class="contact-form">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" id="submit">Send Message</button>
+            <p id="errorMessage"></p>
           </form>
         </details>
     </section>

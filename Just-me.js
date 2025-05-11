@@ -11,7 +11,8 @@ const aboutLink = document.querySelector('.about1');
 const homeLink = document.querySelector('.home2');
 const aboutSection = document.getElementById('aboutme');
 const mainSection = document.getElementById('main');
-//const seework = document.getElementById("seework");
+const seework = document.getElementById("seework");
+const seework2 = document.getElementById("seework2");
 
 
 menubarbtn.addEventListener("click", () => {
@@ -36,41 +37,40 @@ close.addEventListener("click",function(event) {
    sectionsidemenu.style.display = 'none';
 });
 
+seework.addEventListener("click",function(event){
+  event.preventDefault();
+  aboutSection.style.display="block";
+  seework.style.display="block"
+  aboutSection.style.display = "none";
+  seework.style.display="none"
+  mainSection.style.display="block"
+  seework2.style.display="block"
+});
+
 aboutLink.addEventListener('click', function (e) {
   e.preventDefault();
   aboutSection.style.display = 'block';
+  seework.style.display="block"
+  seework2.style.display="none"
   mainSection.style.display = 'none';
   sectionsidemenu.style.display ="none";
-  seework.textContent = "Click To go Back";
 });
 
-homeLink.addEventListener('click', function (e) {
+ homeLink.addEventListener('click', function (e) {
   e.preventDefault();
   sectionsidemenu.style.display = 'none';
   aboutSection.style.display = 'none';
   mainSection.style.display = 'block';
-  seework.textContent = "See My Work";
+  seework2.style.display="block"
+  seework.style.display = "none";
+ });
 });
+    
 
 
-/*
-  contactForms.forEach(form => {
-    form.addEventListener('submit', (e) => {
-      const name = form.querySelector('.name-input').value.trim();
-      const email = form.querySelector('.email-input').value.trim();
-      const message = form.querySelector('.message-input').value.trim();
 
-      if (name.length < 2) {
-        e.preventDefault();
-        alert('Please enter a valid name.');
-      } else if (!email.includes('@') || email.length < 5) {
-        e.preventDefault();
-        alert('Please enter a valid email address.');
-      } else if (message.length < 10) {
-        e.preventDefault();
-        alert('Please enter a message with at least 10 characters.');
-      }
-    });
-  });
-  */
-});
+      
+        
+        
+      
+        

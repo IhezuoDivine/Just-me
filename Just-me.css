@@ -194,7 +194,15 @@ body{
 .seework:hover{
   background-color: hsl(210, 100%, 60%);
 }
-
+.seework2{
+  align-items: center;
+  text-align: center;
+}
+#seework{
+  display: none;
+  align-items: center;
+  text-align: center;
+}
 
 .about {
   max-width: 900px;
@@ -437,6 +445,7 @@ summary::-webkit-details-marker{
   font-size: 16px;
 }
 .contact-form textarea {
+  padding: 3%;
   font-size: 20px;
   height: 200px;
   border-radius: 6px;
