@@ -203,7 +203,20 @@ body{
   align-items: center;
   text-align: center;
 }
-
+@media(min-width:700px){
+  .home{
+    padding-top: 80px;
+    margin: 5% 5% 1px 5%;
+  }
+  .home h1{
+    padding-top: 2px;
+    margin-bottom:30px;
+  }
+  .CV, .seework{
+    margin-top: 30px;
+  }
+  
+}
 .about {
   max-width: 900px;
   margin: 40px auto;
@@ -301,13 +314,26 @@ iframe{
   border: none;
 }
 @media (min-width: 750px){
+  .project{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   iframe{
-    width: 400px;
+    width: 600px;
+  }
+  .iframebox{
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
 .iframebox h2{
   font-size: 30px;
   margin-bottom: 5%;
+  padding-top: 2rem;
 }
 .articleskill h2{
   text-align: center;
@@ -371,8 +397,8 @@ iframe{
   text-align: center;
 }
 .contact-location{
-  padding: 5%;
-  margin-top: 5%;
+  padding:30px;
+  margin-top:20px;
   border-radius: 5px;
   background-color: hsl(240, 50%, 90%);
   border: 1px solid hsl(240, 50%, 87%);
