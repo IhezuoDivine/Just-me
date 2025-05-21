@@ -297,6 +297,7 @@ body{
   border-radius: 10px;
   padding:0 0  5% 0px;
 }
+/*
 .iframebox a{
   color: hsl(210, 100%, 46%);
   padding: 5px;
@@ -307,6 +308,7 @@ body{
   color: hsl(210, 100%, 60%) ;
   background-color: hsl(0, 0%, 50%);
 }
+*/
 iframe{
   border-radius: 10px;
   width:100%;
@@ -335,6 +337,17 @@ iframe{
   margin-bottom: 5%;
   padding-top: 2rem;
 }
+.iframebox a{
+  font-size: 16px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: black;
+}
+.iframebox a:hover{
+  color: hsl(0, 0%, 70%);
+  background-color: hsl(0, 0%, 38%);
+}
 .articleskill h2{
   text-align: center;
   margin-bottom: 5%;
@@ -354,6 +367,9 @@ iframe{
   padding: 10px 16px;
   border-radius: 50px;
   font-size: 18px;
+}
+.skillscontainer h3:hover{
+  background-color: hsl(210, 100%, 70%);
 }
 .services {
   padding: 3rem 1rem;
@@ -450,6 +466,15 @@ summary{
   margin-left: 20%;
   margin-bottom: 1rem;
 }
+@media(min-width:800px){
+  summary{
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+}
+summary:hover{
+  background-color: hsl(210, 100%, 66%);
+}
 summary::-webkit-details-marker{
   display: none;
 }
@@ -510,7 +535,8 @@ footer {
 }
 
 .footer-nav a:hover {
-  color: hsl(210, 100%, 40%);
+  color: hsl(210, 100%, 70%);
+  font-size: 20px;
 }
 
 .social-icons a {
