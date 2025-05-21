@@ -516,11 +516,10 @@ summary::-webkit-details-marker{
 }
 
 footer {
-  background: white;
+  background: hsl(0, 0%, 98%);
   padding: 5%;
   text-align: center;
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
-  color: hsl(0, 0%, 30%);
+  color: black;
 }
 .footer-nav {
   margin-bottom: 5%;
@@ -549,10 +548,11 @@ footer {
 
 .social-icons a:hover {
   color: hsl(210, 100%, 40%);
+  font-size: 20px;
 }
 
 footer p {
   margin-top: 2%;
   font-size: 14px;
-  color: hsl(0, 0%, 50%);
+  color: hsl(0, 0%, 10%);
 }
