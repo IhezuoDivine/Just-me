@@ -25,6 +25,7 @@ body{
   padding: 10px 3%;
   font-size: 25px;
   margin-top: -5%;
+  align-items: center;
   background-color: white;
   z-index: 100;
 }
@@ -32,17 +33,20 @@ body{
   display: flex;
   justify-content: space-between;
 }
+.logo h1{
+  font-family: sans-serif;
+  letter-spacing: -2px;
+}
 
 .logo a i {
   font-size: 30px;
   padding: 10px;
   border-radius: 50%;
   color: var(--text-color);
-  background-color: var(--main-color);
   transition: background-color 0.3s;
 }
 .logo a i:hover {
-  background-color: hsl(210, 100%, 60%);
+  color: hsl(210, 100%, 60%);
 }
 #section-sidemenu {
   position: fixed;
@@ -116,11 +120,12 @@ body{
 }
 
 .home{
-  padding-top: 120px;
-  margin: 5%;
+  padding: 100px 5% 5% 5%;
+  margin: 5% 0% 0% 0%;
   animation: zoomOut 1.5s ease-out forwards; 
   transform: scale(1);
   opacity: 0;
+  background-color: hsl(240, 50%, 95%);
   transition: opacity 2s ease-out;
 }
 @keyframes zoomOut{
@@ -154,8 +159,8 @@ body{
 }
 .home h1{
   padding-top: 5%;
-  font-size: 40px;
-  margin-bottom: 10%;
+  font-size: 30px;
+  margin-bottom: 5%;
   display: inline-block;
 }
 .home p{
@@ -168,12 +173,15 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT' , sans-serif;
 }
 .CV{
-  margin-top: 10%;
+  margin-top: 5%;
+  align-items: center;
+  text-align: center;
 }
 .CV a{
-  font-size: 20px;
+  font-size: 16px;
   font-family: monospace;
   font-weight: lighter;
+  color: var(--main-color);
 
 }
 .CV a:hover{
@@ -184,11 +192,11 @@ body{
   justify-content: center;
   padding: 10px 2px;
   background-color: var(--main-color);
-  border-radius: 5px;
-  color: black;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 10%;
+  border-radius: 50px;
+  color: hsl(0, 0%, 98%);
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 50px;
   font-size: 20px;
 }
 .seework:hover{
@@ -205,8 +213,8 @@ body{
 }
 @media(min-width:700px){
   .home{
-    padding-top: 80px;
-    margin: 5% 5% 1px 5%;
+    padding-top: 80px 5% 5% 5%;
+    margin: 5% 0% 0% 0%;
   }
   .home h1{
     padding-top: 2px;
@@ -285,9 +293,11 @@ body{
 }
 
 .project h1{
-  margin-top: 10%;
-  font-size: 55px;
+  margin-top: 50px;
+  font-size: 35px;
   text-align:  center;
+  color: black;
+  margin-bottom: 45px;
 }
 .iframebox{
   text-align: center;
@@ -297,18 +307,6 @@ body{
   border-radius: 10px;
   padding:0 0  5% 0px;
 }
-/*
-.iframebox a{
-  color: hsl(210, 100%, 46%);
-  padding: 5px;
-  border-radius: 10px;
-  background-color: hsl(0, 0%, 80%);
-}
-.iframebox a:hover{
-  color: hsl(210, 100%, 60%) ;
-  background-color: hsl(0, 0%, 50%);
-}
-*/
 iframe{
   border-radius: 10px;
   width:100%;
@@ -342,34 +340,35 @@ iframe{
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
-  background-color: black;
+  background-color: var(--main-color);
 }
 .iframebox a:hover{
   color: hsl(0, 0%, 70%);
   background-color: hsl(0, 0%, 38%);
 }
+.articleskill{
+  padding: 30px 25px 5px 25px;
+}
 .articleskill h2{
-  text-align: center;
+  align-items: center;
+  font-weight: bolder;
+  border-bottom: 1px solid black;
   margin-bottom: 5%;
   font-size: 30px;
 }
  .skillscontainer{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:space-between;
   gap: 8px;
   list-style: none;
-  margin-bottom: 5%;
 }
 .skillscontainer h3{
-  background: hsl(210, 100%, 56%);
-  color: white;
+  border: 1px solid black;
   padding: 10px 16px;
-  border-radius: 50px;
-  font-size: 18px;
-}
-.skillscontainer h3:hover{
-  background-color: hsl(210, 100%, 70%);
+  border-radius: 5px;
+  font-size: 16px;
+  color: hsl(0, 0%, 15%);
 }
 .services {
   padding: 3rem 1rem;
