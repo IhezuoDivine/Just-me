@@ -186,7 +186,7 @@ body{
 .seework:hover{
   background-color: hsl(210, 100%, 60%);
 }
-.seework2{
+#seework2{
   align-items: center;
   text-align: center;
 }
