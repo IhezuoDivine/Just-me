@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -8,20 +8,20 @@
   box-shadow: none;
   outline: none;
 }
-:root{
+:root {
   --bg-color: hsl(240, 50%, 90%);
   --second-bg-color: hsl(white);
   --main-color: hsl(210, 100%, 46%);
   --text-color: hsl(240, 50%, 10%);
 }
-body{
+body {
   background-color: var(--bg-color);
 }
-#logo1{
+#logo1 {
   position: fixed;
   width: 100%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 10px 3%;
   font-size: 25px;
   margin-top: -5%;
@@ -29,11 +29,11 @@ body{
   background-color: white;
   z-index: 100;
 }
-.logo{
+.logo {
   display: flex;
   justify-content: space-between;
 }
-.logo h1{
+.logo h1 {
   font-family: sans-serif;
   letter-spacing: -2px;
 }
@@ -50,33 +50,33 @@ body{
 }
 #section-sidemenu {
   position: fixed;
-  top: 80px; 
+  top: 80px;
   right: 0;
   width: 70%;
   height: calc(100vh - 1px);
   background-color: white;
-  display: none; 
+  display: none;
   overflow-y: auto;
   margin-top: -2%;
   padding: 20px;
   transition: right 0.3s ease;
   z-index: 99;
 }
-.infomenu{
+.infomenu {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5%;
   padding: 10px 18%;
   border: none;
 }
-.infomenu a{
+.infomenu a {
   color: blue;
   font-size: 25px;
 }
-#infobtn:hover{
+#infobtn:hover {
   color: black;
 }
-#sidemenubtn:hover{
+#sidemenubtn:hover {
   color: black;
 }
 #sidemenu a {
@@ -90,14 +90,14 @@ body{
 #sidemenu a:hover {
   color: hsl(240, 50%, 60%);
 }
-#infocontainer{
+#infocontainer {
   margin: 5%;
 }
-#infocontainer p{
+#infocontainer p {
   margin-top: 5%;
   padding-bottom: 10%;
 }
-#infocontainer a{
+#infocontainer a {
   padding: 10px 20px;
   background-color: var(--main-color);
   color: white;
@@ -105,20 +105,20 @@ body{
   text-align: center;
   border-radius: 10px;
 }
-#infocontainer h1{
+#infocontainer h1 {
   margin-top: 10%;
 }
 .contact-info p i {
   margin-right: 10%;
 }
-@media(min-width:1050px){
-  #section-sidemenu{
+@media (min-width: 1050px) {
+  #section-sidemenu {
     width: 40%;
-    background: white ;
+    background: white;
     height: 100%;
   }
 }
-.home{
+.home {
   padding: 100px 5% 5% 5%;
   margin: 5% 0% 0% 0%;
   background-color: hsl(240, 50%, 95%);
@@ -129,85 +129,90 @@ body{
   display: inline-flex;
   z-index: 5;
   border-right: 2px solid black;
-  animation: typing 4s steps(20) forwards, 
-    blink 0.7s step-end infinite;
+  animation: typing 4s steps(20) forwards, blink 0.7s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0ch; }
-  to { width: 8ch; }
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 8ch;
+  }
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
-.home h1{
+.home h1 {
   padding-top: 5%;
   font-size: 30px;
   margin-bottom: 5%;
   display: inline-block;
 }
-.home p{
-  font-size:17px;
+.home p {
+  font-size: 17px;
   margin-bottom: 10px;
 }
-.homespan{
+.homespan {
   color: var(--main-color);
   font-size: 25px;
-  font-family: 'Gill Sans', 'Gill Sans MT' , sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", sans-serif;
 }
-.CV{
+.CV {
   margin-top: 5%;
   align-items: center;
   text-align: center;
 }
-.CV a{
-  font-size: 16px;
+.CV a {
+  font-size: 20px;
   font-family: monospace;
   font-weight: lighter;
   color: var(--main-color);
-
 }
-.CV a:hover{
+.CV a:hover {
   color: hsl(210, 100%, 60%);
 }
-.seework{
+.seework {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px 2px;
   background-color: var(--main-color);
   border-radius: 50px;
   color: hsl(0, 0%, 98%);
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 50px;
+  width: 30%;
+
+  margin: 20px auto;
   font-size: 20px;
 }
-.seework:hover{
+.seework:hover {
   background-color: hsl(210, 100%, 60%);
 }
-#seework2{
+#seework2 {
   align-items: center;
   text-align: center;
 }
-#seework{
+#seework {
   display: none;
   align-items: center;
   text-align: center;
 }
-@media(min-width:700px){
-  .home{
+@media (min-width: 700px) {
+  .home {
     padding-top: 80px 5% 5% 5%;
     margin: 5% 0% 0% 0%;
   }
-  .home h1{
+  .home h1 {
     padding-top: 2px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
   }
-  .CV, .seework{
+  .CV,
+  .seework {
     margin-top: 30px;
   }
-  
 }
 .about {
   max-width: 900px;
@@ -275,79 +280,95 @@ body{
     font-size: 15px;
   }
 }
-
-.project h1{
+.project {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media (min-width: 550px) {
+  .projectcontainer {
+    display: none;
+    grid-template-columns: repeat(auto-fill, 550px);
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+  }
+}
+.project h1 {
   margin-top: 50px;
   font-size: 35px;
-  text-align:  center;
+  text-align: center;
   color: black;
   margin-bottom: 45px;
 }
-.iframebox{
-  text-align: center;
+.main-iframebox {
+  width: 98%;
   border: 1px solid hsl(0, 0%, 80%);
-  margin: 5% 5% 10% 5%;
+  margin: 35px auto;
   background-color: white;
   border-radius: 10px;
-  padding:0 0  5% 0px;
+  padding-bottom: 30px;
+  max-width: 1000px;
 }
-iframe{
+.main-iframe {
+  height: 70vh;
+  width: 100%;
+  max-width: 1000px;
+  border: none;
+}
+.iframebox {
+  text-align: center;
+  border: 1px solid hsl(0, 0%, 80%);
+  margin: 15px 5px;
+  background-color: white;
   border-radius: 10px;
-  width:100%;
+  padding-bottom: 30px;
+  max-width: 100%;
+}
+iframe {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%;
   height: 300px;
   border: none;
 }
-@media (min-width: 750px){
-  .project{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  iframe{
-    width: 600px;
-  }
-  .iframebox{
-    width: 600px;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-}
-.iframebox h2{
+.iframebox h2,
+.main-iframebox h2 {
   font-size: 30px;
   margin-bottom: 5%;
   padding-top: 2rem;
 }
-.iframebox a{
+.iframebox a,
+.main-iframebox a {
   font-size: 16px;
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
   background-color: var(--main-color);
 }
-.iframebox a:hover{
+.iframebox a:hover,
+.main-iframebox a:hover {
   color: hsl(0, 0%, 70%);
   background-color: hsl(0, 0%, 38%);
 }
-.articleskill{
+.articleskill {
   padding: 30px 25px 5px 25px;
 }
-.articleskill h2{
+.articleskill h2 {
   align-items: center;
   font-weight: bolder;
   border-bottom: 1px solid black;
   margin-bottom: 5%;
   font-size: 30px;
 }
- .skillscontainer{
+.skillscontainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: space-between;
   gap: 8px;
   list-style: none;
 }
-.skillscontainer h3{
+.skillscontainer h3 {
   border: 1px solid black;
   padding: 10px 16px;
   border-radius: 5px;
@@ -377,7 +398,7 @@ iframe{
   background: white;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .service-card h3 {
@@ -390,14 +411,14 @@ iframe{
   color: hsl(0, 0%, 5%);
   font-size: 20px;
 }
-.with-contact{
+.with-contact {
   margin: 5%;
   align-items: center;
   text-align: center;
 }
-.contact-location{
-  padding:30px;
-  margin-top:20px;
+.contact-location {
+  padding: 30px;
+  margin-top: 20px;
   border-radius: 5px;
   background-color: hsl(240, 50%, 90%);
   border: 1px solid hsl(240, 50%, 87%);
@@ -409,19 +430,19 @@ iframe{
   padding: 5%;
   border-radius: 50%;
 }
-.contact-location p{
+.contact-location p {
   font-size: 20px;
   margin: 10px 0;
 }
-.contact-location a{
+.contact-location a {
   font-size: 20px;
   margin-top: 0px;
   color: var(--main-color);
 }
-.contact-location a:hover{
+.contact-location a:hover {
   color: hsl(240, 50%, 95%);
 }
-.contact-location i:hover{
+.contact-location i:hover {
   color: hsl(240, 50%, 90%);
   background-color: hsl(240, 50%, 95%);
 }
@@ -437,28 +458,28 @@ iframe{
   font-size: 32px;
 }
 
-summary{
+summary {
   background-color: hsl(210, 100%, 56%);
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size:18px;
+  font-size: 18px;
   padding: 10px;
   margin-right: 20%;
   margin-left: 20%;
   margin-bottom: 1rem;
 }
-@media(min-width:800px){
-  summary{
+@media (min-width: 800px) {
+  summary {
     margin-left: 35%;
     margin-right: 35%;
   }
 }
-summary:hover{
+summary:hover {
   background-color: hsl(210, 100%, 66%);
 }
-summary::-webkit-details-marker{
+summary::-webkit-details-marker {
   display: none;
 }
 .contact-form {
@@ -469,13 +490,13 @@ summary::-webkit-details-marker{
   margin: 0 auto;
 }
 
-.contact-form input{
+.contact-form input {
   padding: 10px;
   border-radius: 6px;
   font-size: 20px;
   border: 1px solid hsl(0, 0%, 80%);
 }
-.contact-form ::placeholder{
+.contact-form ::placeholder {
   font-size: 16px;
 }
 .contact-form textarea {
@@ -485,7 +506,7 @@ summary::-webkit-details-marker{
   border-radius: 6px;
   border: 1px solid hsl(0, 0%, 80%);
 }
-.contact-form textarea::placeholder{
+.contact-form textarea::placeholder {
   padding: 3% 0% 0% 2%;
 }
 .contact-form button {
@@ -522,7 +543,7 @@ footer {
 }
 
 .social-icons a {
-  margin:0 5%;
+  margin: 0 5%;
   font-size: 1.5rem;
   justify-content: space-between;
   color: hsl(210, 100%, 56%);
